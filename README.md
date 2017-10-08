@@ -10,10 +10,14 @@ Okay, so maybe the data science narwhal…
 ## Prerequisites
 For this project you will need:
 
-*Python 2.1 and upwards
-*Sci-kit learn
-*The scripts in capy_capers/zoo_generation
-*Yourself
+* Python 2.7 _Python3 will not work_
+* Python package: pandas
+* Python package: random
+* Sci-kit Learn
+* The scripts in capy_capers/zoo_generation
+* Yourself
+
+It is planned to wrap capy_capers up into a Python package to allow easier use.
 
 
 ## Authors
@@ -23,10 +27,9 @@ For this project you will need:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* This README is based on [PurpleBooth’s template] (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * This work has been developed over the course of several model evaluation talks  - thanks to everyone who has put up with it!
-
+* This README is based on [PurpleBooth’s template] (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
