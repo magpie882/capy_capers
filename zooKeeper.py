@@ -67,9 +67,11 @@ def elephant(n):
 
 def makeZoo(n):
     if type(n) != int and type(n) != float:
-        return(print("You must enter an integer."))
+        print("You must enter an integer.")
+	return("You must enter an integer.")
     elif int(n) < 1:
-        return(print("Only happy, positive animals, please!"))
+        print("Only happy, positive animals, please!")
+	return("Only happy, positive animals, please!")
     else:
         nFloat = float(n)
         nInt = int(n)
