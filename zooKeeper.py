@@ -10,7 +10,7 @@ def capybara(n):
     capybaraDict = {key: None for key in keys}
     
     for capy in capybaraDict:
-        baseValue = float(random.randrange(10, 50, 1))
+        baseValue = float(random.randrange(10, 40, 1))
         torso_height = baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         torso_width = 0.5*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         head_height = 0.2*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
@@ -25,7 +25,7 @@ def bigCapybara(n):
     bigCapybaraDict = {key: None for key in keys}
     
     for capy in bigCapybaraDict:
-        baseValue = float(random.randrange(50, 80, 1))
+        baseValue = float(random.randrange(40, 60, 1))
         torso_height = baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         torso_width = 0.5*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         head_height = 0.2*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
@@ -55,7 +55,7 @@ def elephant(n):
     elephantDict = {key: None for key in keys}
     
     for elephant in elephantDict:
-        baseValue = float(random.randrange(80, 150, 1))
+        baseValue = float(random.randrange(60, 80, 1))
         torso_height = baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         torso_width = 0.5*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
         head_height = 0.3*baseValue*(1.00+(float(random.randrange(-10, 10, 1))/100))
@@ -67,10 +67,10 @@ def elephant(n):
 
 def makeZoo(n):
     if type(n) != int and type(n) != float:
-        print("You must enter an integer.")
+        print "You must enter an integer."
 	return("You must enter an integer.")
     elif int(n) < 1:
-        print("Only happy, positive animals, please!")
+        print "Only happy, positive animals, please!"
 	return("Only happy, positive animals, please!")
     else:
         nFloat = float(n)
@@ -96,4 +96,5 @@ def makeZoo(n):
         allAnimals = pd.DataFrame.from_dict(myZoo).transpose()
         allAnimals.columns = ['torso_height', 'torso_width', 'head_height', 'head_width', 'ear_length']
         
+        print "You've got a zoo now!"
         return(allAnimals)
